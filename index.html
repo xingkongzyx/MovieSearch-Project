@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<section class="hero is-primary is-bold">
+			<div class="hero-body">
+				<div class="container">
+					<h1 class="title">
+						Movie Fight
+						<span class="icon">
+							<i class="fas fa-film"></i>
+						</span>
+					</h1>
+				</div>
+			</div>
+		</section>
+
+		<!-- 主要内容 -->
+		<div class="container">
+			<!-- 为了使代码有可重复性,把产生搜索框的相关代码用jscode进行生产,
+        这样每当想要产生它的时候使用JS中的代码就好,不需要考虑html code -->
+			<div class="columns">
+			<div class="column">
+                <div id="left-autocomplete"></div>
+                <div id="left-summary"></div>
+            </div>
+            <div class="column">
+                <div id="right-autocomplete"></div>
+                <div id="right-summary"></div>
+            </div>
+            </div>
+
+            <div class="is-half notification is-primary tutorial">
+                <h1 class="title">Search For A Movie On Both Sides</h1>
+                <p class="subtitle">WE WILL TELL YOU WHICH IS BEST</p>
+            </div>
+		</div>
+
+		<script src="utils.js"></script>
+		<script src="autocomplete.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
